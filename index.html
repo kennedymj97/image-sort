@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Image Sorter</title>
+    <link rel='stylesheet' type='text/css' href='./index.css' />
+  </head>
+  <body>
+    <div class='root_container'>
+
+        <div class='files_container'>
+            <div class='filenames_container'>
+                <div class='filenames_container--header'>
+                    <span>Files</span>
+                </div>
+                <div class='filenames_container--fileList' id='fileList'>
+
+                </div>
+            </div>
+            <button class='button' id='selectBtn'>OPEN FOLDER</button>
+        </div>
+        
+        <div class='image_container'>
+            <h1 id='classHeader'>
+
+            </h1>
+            <img class='image' src='./placeholder.png' id='image'/>
+            <div class='image_container--buttons'>
+                <button class='button button--img' id='prev'>PREV</button>
+                <button class='button button--img' id='next'>NEXT</button>
+            </div>
+            <button class='button button--remove' id='remove'>REMOVE IMAGE FROM DATASET</button>
+        </div>
+        
+        <div class='class_container' id='classContainer'>
+            <div class='class_names_container'>
+                <div class='class_names_container--header'>
+                    <span>Classes</span>
+                    <div class='class_editing_container'>
+                        <div class='class_editing class_editing--edit' id='editClass'>EDIT</div>
+                        <div class="class_editing class_editing--add" id='addClass'>ADD</div>
+                    </div>
+                </div>
+                <div class='class_names_container--classList' id='classList'>
+                    
+                </div>
+            </div>
+            <button class='confirmButton button--class' id='confirmButton'>CONFIRM</button>
+        </div>
+    
+    </div>
+    <script>
+        require('./renderer.js')
+    </script>
+  </body>
+</html>
